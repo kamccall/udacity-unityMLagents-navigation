@@ -12,14 +12,14 @@ The task is episodic, and the problem is considered 'solved' after achieving a s
 
 # Getting Started
 The project is comprised of three files:
-1. navigation.ipynb: imports packages, connects to Unity environment, and then runs the learning function that will interact with that environment, storing the results in a NN defined in model.py
-2. model.py: contains the pytorch neural network, containing two (fully connected) hidden layers and using RELU activation functions in between
-3. dqn_agent.py: contains the code to initialize the two Q networks, a replay buffer, and wrappers for selecting actions, submitting them to the environment (through 'step') and then learn from experience stored in the replay buffer
+1. **navigation.ipynb**: imports packages, connects to Unity environment, and then runs the learning function that will interact with that environment, storing the results in a NN defined in model.py
+2. **model.py**: contains the pytorch neural network, containing two (fully connected) hidden layers and using RELU activation functions in between
+3. **dqn_agent.py**: contains the code to initialize the two Q networks, a replay buffer, and wrappers for selecting actions, submitting them to the environment (through 'step') and then learn from experience stored in the replay buffer
 
 Logically, there are three steps required in order to execute the project: Download the files referred to above, install the necessary Unity MLAgents environment, and execute the code in the environment of your choice, such as a Jupyter Notebook environment (which is recommended for simplicity).  Here are the more detailed instructions for doing so:
 1. Download the three files above (from the public github repo). 
 Execute this command (at a shell prompt, in the appropriate source repo location where you wish to copy the files):
-$ git clone https://github.com/kamccall/udacity-unityMLagents-navigation
+$ *git clone https://github.com/kamccall/udacity-unityMLagents-navigation*
 This will clone the entire repository - including the three source files as well as associated README and REPORT files - into that source directory. 
 1. Install the Unity MLAgents environment (within which the agent will train and subsequently execute). 
 Follow the directions below in order to install the needed 'navigation' environment for Unity MLAgents:
