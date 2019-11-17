@@ -34,5 +34,5 @@ b. Follow the appropriate directions in this link to install the required packag
 There are three ways to run the code:
 1. Install all three files in the same directory, and execute the navigation .ipynb notebook file in a Jupyter notebook server , or
 2. Insert the code from 'model.py' and 'dqn_agent.py' into new (inserted) cells in the .ipynb notebook file, and execute everything from the single notebook file within a Jupyter notebook environment, or
-3. (More difficult): Copy and paste the Python code from within the .ipynm notebook file into a Python source code file, and then execute the program from the command line (with all appropriate dependencies based on your IDE and OS)
+3. (More difficult): Copy and paste the Python code from within the .ipynb notebook file into a Python source code file, and then execute the program from the command line (with all appropriate dependencies based on your IDE and OS)
 
