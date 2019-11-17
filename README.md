@@ -16,9 +16,23 @@ The project is comprised of three files:
 2. model.py: contains the pytorch neural network, containing two (fully connected) hidden layers and using RELU activation functions in between
 3. dqn_agent.py: contains the code to initialize the two Q networks, a replay buffer, and wrappers for selecting actions, submitting them to the environment (through 'step') and then learn from experience stored in the replay buffer
 
-There are dependencies upon various Python packages such as numpy, pyplot, and (very importantly) Pytorch and Unity, but those packages are automatically imported as a result of running the cells. 
+Logically, there are three steps required in order to execute the project: Download the files referred to above, install the necessary Unity MLAgents environment, and execute the code in the environment of your choice, such as a Jupyter Notebook environment (which is recommended for simplicity).  Here are the more detailed instructions for doing so:
+1. Download the three files above (from the public github repo)
+Execute this command (at a shell prompt, in the appropriate source repo location where you wish to copy the files):
+$ git clone https://github.com/kamccall/udacity-unityMLagents-navigation
+This will clone the entire repository - including the three source files as well as associated README and REPORT files - into that source directory. 
+2. Install the Unity MLAgents environment (within which the agent will train and subsequently execute)
+Follow the directions below in order to install the needed 'navigation' environment for Unity MLAgents:
+https://github.com/udacity/deep-reinforcement-learning/tree/master/p1_navigation#getting-started
+3. Execute the code (either within a Jupyter Notebook environment, or within an alternative IDE)
+There are dependencies upon various Python packages in order to successfully execute this project, such as numpy, pyplot, torch, and others. Depending upon your Python environment, it is likely that those packages are already installed, in which case the 'import' commands in the code will successfully execute, thereby allowing the use of the code in those packages.
+If your environment does not already have all of these packages installed, it is possible that you will need to install one or more packages before you can successfully execute the 'import' command to utilize them.  If that is the case:  
+a. ADD a new cell at the top of your Jupyter notebook
+b. Follow the appropriate directions in this link to install the required packages (which will be different depending upon whether you are using 'pip' or 'conda' as your package manager): https://jakevdp.github.io/blog/2017/12/05/installing-python-packages-from-jupyter/
 
 # Build and Test Instructions
-There are two ways to run the code:
-1. Install all three files in the same directory, and execute the navigation notebook in a notebook server, or
-2. Insert the code from 'model.py' and 'dqn_agent.py' into additional (inserted) cells in the notebook file, and execute everything from the single notebook file
+There are three ways to run the code:
+1. Install all three files in the same directory, and execute the navigation .ipynb notebook file in a Jupyter notebook server , or
+2. Insert the code from 'model.py' and 'dqn_agent.py' into new (inserted) cells in the .ipynb notebook file, and execute everything from the single notebook file within a Jupyter notebook environment, or
+3. (More difficult): Copy and paste the Python code from within the .ipynm notebook file into a Python source code file, and then execute the program from the command line (with all appropriate dependencies based on your IDE and OS)
+
